@@ -33,7 +33,7 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 <img src="./assets/overall_architecture.png">
 
 
-## Visualization Results
+## 📷 Visualization Results
 - We adopt the pre-trained [Mamba-YOLO-World-S](configs/mamba2_yolo_world_v2_s.py), 
   [Mamba-YOLO-World-M](configs/mamba2_yolo_world_v2_m.py), 
   [Mamba-YOLO-World-L](configs/mamba2_yolo_world_v2_l.py), 
