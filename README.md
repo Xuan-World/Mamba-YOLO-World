@@ -91,7 +91,7 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 
 ### 1. Installation
 
-Mamba-YOLO-World is developed based on `torch==2.0.0`,`mamba-ssm==2.1.0`, `mmyolo==0.6.0`,`mmcv==2.0.1`, `mmyolo==0.6.0` and `mmdetection==3.3.0`. 
+Mamba-YOLO-World is developed based on `torch==2.0.0`,`mamba-ssm==2.1.0`, `mmcv==2.0.1`, `mmyolo==0.6.0` and `mmdetection==3.3.0`. 
 
 ### 2. Preparing Data
 
