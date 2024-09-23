@@ -2,9 +2,10 @@
   <h1>Mamba-YOLO-World</h1>
   <h3>Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection</h3>
   Haoxuan Wang, Qingdong He, Jinlong Peng, Hao Yang, Mingmin Chi, Yabiao Wang
+
+[![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2409.08513)
+
 </div>
-
-
 
 ## Abstract
 Open-vocabulary detection (OVD) aims to detect objects beyond a predefined set of categories.
