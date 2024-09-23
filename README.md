@@ -33,7 +33,7 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 - Experiments demonstrate that our model outperforms the original YOLO-World while maintaining comparable parameters and FLOPs. Additionally, it surpasses existing state-of-the-art OVD methods with fewer parameters and FLOPs.
 
 
-<img src="./assets/overall_architecture.png">
+<img src="docs/assets/overall_architecture.png">
 
 
 ## 📷 Visualization Results
@@ -47,7 +47,7 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 - All visualization results are available at: https://pan.quark.cn/s/450070c03c58. You are welcome to download them and make a comparison between *our* Mamba-YOLO-World and the *original* YOLO-World across small (S), medium (M) and large (L) size variants.
 - The visualization results demonstrate that our Mamba-YOLO-World significantly outperforms YOLO-World (even YOLO-World-v2, the latest version of YOLO-World) in terms of accuracy and generalization across all size variants.
 
-<img src="./assets/visualization.png">
+<img src="docs/assets/visualization.png">
 
 ## Model Zoo
 

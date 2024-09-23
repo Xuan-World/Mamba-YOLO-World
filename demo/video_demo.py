@@ -13,7 +13,7 @@ from mmyolo.registry import VISUALIZERS
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='YOLO-World video demo')
+    parser = argparse.ArgumentParser(description='Mamba-YOLO-World video demo')
     parser.add_argument('config', help='Config file')
     parser.add_argument('checkpoint', help='Checkpoint file')
     parser.add_argument('video', help='video file path')

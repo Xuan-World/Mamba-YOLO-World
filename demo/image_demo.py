@@ -36,7 +36,7 @@ LABEL_ANNOTATOR = LabelAnnotator(text_padding=4,
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='YOLO-World Demo')
+    parser = argparse.ArgumentParser(description='Mamba-YOLO-World Demo')
     parser.add_argument('--config',default='configs/mamba2_yolo_world_s.py', help='test config file path')
 
     parser.add_argument('--checkpoint', default=None, help='checkpoint file')
