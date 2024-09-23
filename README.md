@@ -10,6 +10,7 @@
 
 </div>
 
+
 ## Abstract
 Open-vocabulary detection (OVD) aims to detect objects beyond a predefined set of categories.
 As a pioneering model incorporating the YOLO series into OVD, YOLO-World is well-suited for scenarios prioritizing speed and efficiency.
