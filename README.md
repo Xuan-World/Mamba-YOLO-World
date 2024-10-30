@@ -22,7 +22,9 @@ Experiments demonstrate that our model outperforms the original YOLO-World on th
 Additionally, it surpasses existing state-of-the-art OVD methods with fewer parameters and FLOPs.
 
 ## ✨ News
-**`2024-09-24`**: 🚀 We provide the all the Model Weights for community.
+**`2024-10-30`**: 🤗 We provide the Model Weights and Visualization Results on HuggingFace.
+
+**`2024-09-24`**: 🚀 We provide all the Model Weights for community.
 
 **`2024-09-14`**: 💎 We provide the Mamba-YOLO-World source code for community.
 
@@ -50,7 +52,7 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
   [YOLO-World-v2-M](configs/YOLOWorld_v2/yolo_world_v2_m_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_lvis_minival.py), 
   [YOLO-World-v2-L](configs/YOLOWorld_v2/yolo_world_v2_l_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_lvis_minival.py) 
   and conduct **zero-shot** inferences on the LVIS-val2017 (COCO-val2017 images with the LVIS vocabulary). Specifically, the LVIS vocabulary contains 1203 categories.
-- All visualization results are available at: https://pan.quark.cn/s/450070c03c58. You are welcome to download them and make a comparison between *our* Mamba-YOLO-World and the *original* YOLO-World across small (S), medium (M) and large (L) size variants.
+- All visualization results are available at: https://pan.quark.cn/s/450070c03c58 (if you use Quark) and https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main/zeroshot_pictures_COCO_Comparison (the same for HuggingFace users). You are welcome to download them and make a comparison between *our* Mamba-YOLO-World and the *original* YOLO-World across small (S), medium (M) and large (L) size variants.
 - The visualization results demonstrate that our Mamba-YOLO-World significantly outperforms YOLO-World (even YOLO-World-v2, the latest version of YOLO-World) in terms of accuracy and generalization across all size variants.
 
 <img src="docs/assets/visualization.png">
@@ -61,11 +63,11 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 
 <div><font size=2>
 
-| model                                                    | Pre-train Data       | AP<sup>mini</su> | AP<sub>r</sub> | AP<sub>c</sub> | AP<sub>f</sub> | weights |
-|:---------------------------------------------------------| :------------------- |:----------------:|:--------------:|:--------------:|:--------------:|:-------:|
-| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG |       27.7       |      19.5      |      27.0      |      29.9      |  https://pan.quark.cn/s/dce0710ffcec       |
-| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG |       32.8       |      27.0      |      31.9      |      34.8      |  https://pan.quark.cn/s/dce0710ffcec       | 
-| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG |       35.0       |      29.3      |      34.2      |      36.8      |  https://pan.quark.cn/s/dce0710ffcec       | 
+| model                                                    | Pre-train Data       | AP<sup>mini</su> | AP<sub>r</sub> | AP<sub>c</sub> | AP<sub>f</sub> |          weights on Quark           |             weights on HuggingFace                           |
+|:---------------------------------------------------------| :------------------- |:----------------:|:--------------:|:--------------:|:--------------:|:-----------------------------------:|:------------------------------------------------------------:|
+| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG |       27.7       |      19.5      |      27.0      |      29.9      | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG |       32.8       |      27.0      |      31.9      |      34.8      | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG |       35.0       |      29.3      |      34.2      |      36.8      | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
 
 </font>
 </div>
@@ -74,11 +76,11 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 
 <div><font size=2>
 
-| model                                                    | Pre-train Data       |  AP  | AP<sub>50</sub> | AP<sub>75</sub> | weights |
-|:---------------------------------------------------------| :------------------- |:----:|:---------------:|:---------------:|:-------:|
-| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG | 38.0 |      52.9       |      41.0       |  https://pan.quark.cn/s/dce0710ffcec       |
-| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG | 43.2 |      58.8       |      46.6       |  https://pan.quark.cn/s/dce0710ffcec       | 
-| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG | 45.4 |      61.3       |      49.4       |  https://pan.quark.cn/s/dce0710ffcec       | 
+| model                                                    | Pre-train Data       |  AP  | AP<sub>50</sub> | AP<sub>75</sub> |          weights on Quark           |                   weights on HuggingFace                     |
+|:---------------------------------------------------------| :------------------- |:----:|:---------------:|:---------------:|:-----------------------------------:|:------------------------------------------------------------:|
+| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG | 38.0 |      52.9       |      41.0       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG | 43.2 |      58.8       |      46.6       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG | 45.4 |      61.3       |      49.4       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
 
 </font>
 </div>
@@ -87,11 +89,11 @@ This repo contains the PyTorch implementation, pre-trained weights, and pre-trai
 
 <div><font size=2>
 
-| model                                                    | Pre-train Data       |  AP  | AP<sub>50</sub> | AP<sub>75</sub> | weights |
-|:---------------------------------------------------------| :------------------- |:----:|:---------------:|:---------------:|:-------:|
-| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG | 46.4 |      62.5       |      50.5       |  https://pan.quark.cn/s/dce0710ffcec       |
-| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG | 51.4 |      68.2       |      56.1       |  https://pan.quark.cn/s/dce0710ffcec       | 
-| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG | 54.1 |      71.1       |      59.0       |  https://pan.quark.cn/s/dce0710ffcec       | 
+| model                                                    | Pre-train Data       |  AP  | AP<sub>50</sub> | AP<sub>75</sub> |          weights on Quark           |                      weights on HuggingFace                  |
+|:---------------------------------------------------------| :------------------- |:----:|:---------------:|:---------------:|:-----------------------------------:|:------------------------------------------------------------:|
+| [Mamba-YOLO-World-S](configs/mamba2_yolo_world_s.py)     | O365+GoldG | 46.4 |      62.5       |      50.5       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-M](configs/mamba2_yolo_world_m.py)     | O365+GoldG | 51.4 |      68.2       |      56.1       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
+| [Mamba-YOLO-World-L](configs/mamba2_yolo_world_l.py)     | O365+GoldG | 54.1 |      71.1       |      59.0       | https://pan.quark.cn/s/dce0710ffcec | https://huggingface.co/Xuan-World/Mamba-YOLO-World/tree/main |
 
 </font>
 </div>
