@@ -1,27 +1,17 @@
 <div align="center">
-  <h1>Mamba-YOLO-World</h1>
-  <h3>Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection</h3>
-  Haoxuan Wang, Qingdong He, Jinlong Peng, Hao Yang, Mingmin Chi, Yabiao Wang
+<h1>Mamba-YOLO-World</h1>
+<h3>Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection</h3>
+Haoxuan Wang, Qingdong He, Jinlong Peng, Hao Yang, Mingmin Chi, Yabiao Wang
 
-  <br>
-  <br>
-
-  [![arxiv paper](https://img.shields.io/badge/arXiv-Paper-red)](https://arxiv.org/abs/2409.08513)
+<a href="https://arxiv.org/abs/2409.08513"><img src="https://img.shields.io/badge/arXiv-2409.08513-A42C25.svg" alt="arXiv"></a>
 
 </div>
 
-
-## Abstract
-Open-vocabulary detection (OVD) aims to detect objects beyond a predefined set of categories.
-As a pioneering model incorporating the YOLO series into OVD, YOLO-World is well-suited for scenarios prioritizing speed and efficiency.
-However, its performance is hindered by its neck feature fusion mechanism, which causes the quadratic complexity and the limited guided receptive fields. 
-To address these limitations, we present Mamba-YOLO-World, a novel YOLO-based OVD model employing the proposed MambaFusion Path Aggregation Network (MambaFusion-PAN) as its neck architecture.
-Specifically, we introduce an innovative State Space Model-based feature fusion mechanism consisting of a Parallel-Guided Selective Scan algorithm and a Serial-Guided Selective Scan algorithm with linear complexity and globally guided receptive fields.
-It leverages multi-modal input sequences and mamba hidden states to guide the selective scanning process.
-Experiments demonstrate that our model outperforms the original YOLO-World on the COCO and LVIS benchmarks in both zero-shot and fine-tuning settings while maintaining comparable parameters and FLOPs. 
-Additionally, it surpasses existing state-of-the-art OVD methods with fewer parameters and FLOPs.
-
 ## ✨ News
+<div align="center">
+<h3>🎉 accepted by ICASSP 2025 (Oral)</h3>
+</div>
+
 **`2024-10-30`**: 🤗 We provide the Model Weights and Visualization Results on HuggingFace.
 
 **`2024-09-24`**: 🚀 We provide all the Model Weights for community.
@@ -142,3 +132,14 @@ We provide the details about the pre-training data in [docs/data](./docs/data.md
 
 We sincerely thank [mmyolo](https://github.com/open-mmlab/mmyolo), [mmdetection](https://github.com/open-mmlab/mmdetection), [YOLO-World](https://github.com/AILAB-CVC/YOLO-World), [Mamba](https://github.com/state-spaces/mamba) and [VMamba](https://github.com/MzeroMiko/VMamba) for providing their wonderful code to the community!
 
+## Citation
+```BibTeX
+@inproceedings{wang2025mamba,
+  title={Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection},
+  author={Wang, Haoxuan and He, Qingdong and Peng, Jinlong and Yang, Hao and Chi, Mingmin and Wang, Yabiao},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  organization={IEEE}
+}
+```
