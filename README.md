@@ -3,6 +3,8 @@
 <h3>Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection</h3>
 Haoxuan Wang, Qingdong He, Jinlong Peng, Hao Yang, Mingmin Chi, Yabiao Wang
 
+<br>
+<br>
 <a href="https://arxiv.org/abs/2409.08513"><img src="https://img.shields.io/badge/arXiv-2409.08513-A42C25.svg" alt="arXiv"></a>
 
 </div>
