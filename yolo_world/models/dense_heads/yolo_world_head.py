@@ -1,7 +1,9 @@
 # Copyright (c) Tencent Inc. All rights reserved.
+import ipdb
 import math
 import copy
 from typing import List, Optional, Tuple, Union, Sequence
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -407,7 +409,8 @@ class YOLOWorldHead(YOLOv8Head):
         outs = self(img_feats, txt_feats)
         predictions = self.predict_by_feat(*outs,
                                            batch_img_metas=batch_img_metas,
-                                           rescale=rescale)
+                                           rescale=rescale,
+                                           )
         return predictions
 
     def aug_test(self,
@@ -602,6 +605,7 @@ class YOLOWorldHead(YOLOv8Head):
             - bboxes (Tensor): Has a shape (num_instances, 4),
               the last dimension 4 arrange as (x1, y1, x2, y2).
         """
+
         assert len(cls_scores) == len(bbox_preds)
         if objectnesses is None:
             with_objectnesses = False

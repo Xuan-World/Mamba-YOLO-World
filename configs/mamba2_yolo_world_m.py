@@ -58,7 +58,7 @@ text_transform = [
          padding_to_max=True,
          padding_value=''),
     dict(type='mmdet.PackDetInputs',
-         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape', 'flip',
+         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape', 'flip','img',
                     'flip_direction', 'texts'))
 ]
 train_pipeline = [
@@ -134,7 +134,7 @@ test_pipeline = [
     *_base_.test_pipeline[:-1],
     dict(type='LoadText'),
     dict(type='mmdet.PackDetInputs',
-         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape',
+         meta_keys=('img_id', 'img_path', 'ori_shape', 'img_shape','img',
                     'scale_factor', 'pad_param', 'texts'))
 ]
 

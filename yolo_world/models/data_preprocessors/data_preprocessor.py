@@ -32,6 +32,7 @@ class YOLOWDetDataPreprocessor(DetDataPreprocessor):
         Returns:
             dict: Data in the same format as the model input.
         """
+        # ipdb.set_trace()
         if not training:
             return super().forward(data, training)
 
